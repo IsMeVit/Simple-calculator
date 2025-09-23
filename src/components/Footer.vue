@@ -1,74 +1,42 @@
 <template>
   <footer class="relative bg-gray-900 text-white pt-16 pb-8">
-    <!-- Wave divider -->
-    <div class="footer-wave">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,
-             82.39-16.72,168.19-17.73,250.45-.39,
-             C823.78,31,906.67,72,985.66,92.83,
-             c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,
-             600.21,0,0,0,321.39,56.44Z"
-          class="shape-fill"
-        />
-      </svg>
-    </div>
-
     <div class="container mx-auto px-4">
-      <div class="flex flex-col md:flex-row justify-between items-center md:items-start">
-        <!-- Brand info -->
+      <div class="flex flex-col md:flex-row justify-between items-center md:items-start mb-12">
         <div class="mb-8 md:mb-0 text-center md:text-left">
-          <h2 class="text-2xl font-bold mb-2">Ashtro William</h2>
-          <p class="text-gray-400 max-w-xs">
+          <h2 class="text-3xl font-bold mb-2 tracking-wide text-white">Dara Devit</h2>
+          <p class="text-gray-400 max-w-xs text-lg">
             Frontend Developer & UI/UX Designer
           </p>
-
-          <div class="flex justify-center md:justify-start space-x-4 mt-4">
-            <a href="#" class="social-icon text-gray-400 hover:text-white">
-              <i class="fab fa-github text-xl"></i>
-            </a>
-            <a href="#" class="social-icon text-gray-400 hover:text-white">
-              <i class="fab fa-linkedin text-xl"></i>
-            </a>
-            <a href="#" class="social-icon text-gray-400 hover:text-white">
-              <i class="fab fa-twitter text-xl"></i>
-            </a>
-            <a href="#" class="social-icon text-gray-400 hover:text-white">
-              <i class="fab fa-dribbble text-xl"></i>
-            </a>
+          <div class="flex justify-center md:justify-start space-x-4 mt-6">
+            <a href="#" class="social-icon text-gray-400 hover:text-white"><i class="fab fa-github text-2xl"></i></a>
+            <a href="#" class="social-icon text-gray-400 hover:text-white"><i class="fab fa-linkedin text-2xl"></i></a>
+            <a href="#" class="social-icon text-gray-400 hover:text-white"><i class="fab fa-twitter text-2xl"></i></a>
+            <a href="#" class="social-icon text-gray-400 hover:text-white"><i class="fab fa-dribbble text-2xl"></i></a>
           </div>
         </div>
 
-        <!-- Navigation links -->
-        <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 mb-8 md:mb-0">
-          <div>
-            <h3 class="text-lg font-semibold mb-4">Explore</h3>
-            <ul class="space-y-2">
+        <div class="grid grid-cols-2 gap-8 sm:grid-cols-3">
+          <div class="col-span-1">
+            <h3 class="text-lg font-semibold mb-4 text-white">Explore</h3>
+            <ul class="space-y-2 text-gray-400">
               <li><a href="#" class="link">Home</a></li>
               <li><a href="#" class="link">Projects</a></li>
               <li><a href="#" class="link">About</a></li>
               <li><a href="#" class="link">Contact</a></li>
             </ul>
           </div>
-
-          <div>
-            <h3 class="text-lg font-semibold mb-4">Projects</h3>
-            <ul class="space-y-2">
+          <div class="col-span-1">
+            <h3 class="text-lg font-semibold mb-4 text-white">Projects</h3>
+            <ul class="space-y-2 text-gray-400">
               <li><a href="#" class="link">Web Apps</a></li>
               <li><a href="#" class="link">Mobile Apps</a></li>
               <li><a href="#" class="link">UI Designs</a></li>
               <li><a href="#" class="link">Open Source</a></li>
             </ul>
           </div>
-
-          <div>
-            <h3 class="text-lg font-semibold mb-4">Legal</h3>
-            <ul class="space-y-2">
+          <div class="col-span-1">
+            <h3 class="text-lg font-semibold mb-4 text-white">Legal</h3>
+            <ul class="space-y-2 text-gray-400">
               <li><a href="#" class="link">Privacy</a></li>
               <li><a href="#" class="link">Terms</a></li>
               <li><a href="#" class="link">Cookies</a></li>
@@ -77,33 +45,31 @@
         </div>
       </div>
 
-      <!-- Newsletter -->
-      <div class="mt-12 mb-8 border-t border-gray-800 pt-8">
+      <div class="border-t border-gray-700 pt-8 mt-8">
         <div class="max-w-md mx-auto text-center">
-          <h3 class="text-xl font-semibold mb-2">Stay Updated</h3>
-          <!-- <p class="text-gray-400 mb-4">
+          <h3 class="text-xl font-semibold mb-3 text-white">Stay Updated</h3>
+          <p class="text-gray-400 mb-6 px-4">
             Subscribe to my newsletter for the latest projects and insights.
-          </p> -->
-          <!-- <div class="flex">
+          </p>
+          <div class="flex w-full">
             <input
               v-model="email"
               type="email"
               placeholder="Your email"
-              class="flex-grow px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-purple-600"
+              class="flex-grow px-4 py-3 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-[#689d6a] transition-all"
             />
             <button
               @click="subscribe"
-              class="bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded-r-lg font-medium transition"
+              class="bg-[#689d6a] hover:bg-[#8ec07c] px-6 py-3 rounded-r-lg font-medium transition-all text-black"
             >
               Subscribe
             </button>
-          </div> -->
+          </div>
         </div>
       </div>
 
-      <!-- Copyright -->
-      <div class="text-center text-gray-500 text-sm">
-        <p>&copy; <span id="year">2025</span> Ashtro William. All rights reserved.</p>
+      <div class="text-center text-gray-500 text-sm mt-8">
+        <p>&copy; {{ currentYear }} Dara Devit. All rights reserved.</p>
         <p class="mt-1">
           Built with <i class="fas fa-heart text-red-500"></i> and Vue.js
         </p>
@@ -112,24 +78,21 @@
   </footer>
 </template>
 
-<!-- <script>
-  document.querySelector('#year').innerText = new Date().getFullYear();
-</script> -->
+<script setup>
+import { ref } from 'vue';
 
-<!-- <script setup>
-import { ref } from 'vue'
-
-const email = ref('')
+const email = ref('');
+const currentYear = new Date().getFullYear();
 
 const subscribe = () => {
-  if (!email.value) {
-    alert('Please enter your email.')
-    return
+  if (!email.value || !email.value.includes('@')) {
+    alert('Please enter a valid email address.');
+    return;
   }
-  alert(`Subscribed with: ${email.value}`)
-  email.value = ''
-}
-</script> -->
+  alert(`Subscribed with: ${email.value}`);
+  email.value = ''; // Reset email input after subscription
+};
+</script>
 
 <style scoped>
 .footer-wave {
@@ -141,26 +104,22 @@ const subscribe = () => {
   line-height: 0;
   transform: rotate(180deg);
 }
-
 .footer-wave svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
   height: 50px;
 }
-
 .footer-wave .shape-fill {
   fill: #ffffff;
 }
-
 .social-icon {
   transition: all 0.3s ease;
 }
-
 .social-icon:hover {
   transform: translateY(-3px);
+  color: #a9b665;
 }
-
 /* .link {
   @apply text-gray-400 hover:text-white transition;
 } */
