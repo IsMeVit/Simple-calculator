@@ -8,11 +8,15 @@ export default {
   },
   methods: {
     updateDisplay(val) {
-      const maxDigits = 12; 
-      
-      if (this.inputStr === '0' && !isNaN(val)) {
+      const maxDigits = 20; 
+      const IfOperator = ['+', '-', '*', '/'].includes(val);
+
+      if (this.inputStr === '0' && IfOperator) {
         this.inputStr = String(val);
       } 
+      else if (this.inputStr === '0' && !isNaN(val)) {
+        this.inputStr = String(val);
+      }
       else if (this.inputStr.length < maxDigits) {
         this.inputStr += String(val);
       }
